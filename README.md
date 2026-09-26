@@ -4,7 +4,7 @@
 
 Zweites Stück der **Lineare-Programmierung-Reihe** der "Konzepte"-Reihe für die Website "Sebastian Hanisch – Operations Research und Machine Learning", Kind der Wurzel [tableau-simplex-demo](https://github.com/sebastian-hanisch/tableau-simplex-demo). Dort war die Wahl in jedem Pivot festgelegt: die Spalte mit den kleinsten reduzierten Kosten tritt ein (**Dantzig-Regel**). Andere Regeln wählen anders: der **größte Zuwachs** des Zielwerts, **Steepest Edge** (Verbesserung je Kantenlänge), **Bland** (kleinster Index) oder eine **zufällige** Spalte. Dazu kommt die Zeilenwahl bei einem Gleichstand im Quotiententest: nach **kleinstem Index** oder **lexikographisch**. Bei einem Gleichstand steht der Simplex an einer entarteten Ecke, und dort kann er stillstehen (Nullschritte) oder sogar **kreisen**. Die Demo stellt vier Fragen, alle gemessen: **(1) Regelvergleich** – wie viele Pivots und wie viel Rechnung braucht jede Regel? **(2) Beales Zyklus** – kreist der Simplex wirklich, und was verhindert es? **(3) Stillstand** – wie oft steht er still? **(4) Aufwand** – wie wachsen die Unterschiede mit der Größe?
 
-**Einordnung in die Reihe:** geplant sind zwölf Stücke, dies ist das zweite (Details in `lp-planung/PLAN.md` des Portfolio-Ordners):
+**Einordnung in die Reihe:** die Reihe hat elf Stücke, dies ist das zweite (Details in `lp-planung/PLAN.md` des Portfolio-Ordners):
 
 ```
 Tableau-Simplex (Wurzel)                                                                  [gebaut: tableau-simplex-demo]
