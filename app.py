@@ -86,7 +86,7 @@ Dazu kommt die Zeilenwahl bei einem Gleichstand im Quotiententest: nach **kleins
 **(4) Aufwand** - wie wachsen die Unterschiede mit der Größe?
 """
 )
-st.caption("Kind der Wurzel der Reihe. Folgestücke (Klee-Minty und der schlimmste Fall, Revised Simplex, Dualität, Innere Punkte, PDLP) sind [noch nicht gebaut].")
+st.caption("Kind der Wurzel der Reihe. Folgestücke (Klee-Minty und der schlimmste Fall, Revised Simplex, Dualität, Innere Punkte, PDLP) gibt es als eigene Demos der Reihe.")
 
 with st.expander("So funktionieren die Regeln", expanded=True):
     st.markdown(
@@ -141,7 +141,7 @@ with st.sidebar:
     else:
         seed = C.DEFAULT_SEED
     rule = st.selectbox("Pivotregel", options=list(C.RULE_LABELS), format_func=lambda v: C.RULE_LABELS[v], key="rule_select",
-                        help="Wirkt auf Schritt 2 bis 4 (gewählter Lauf); der Regelvergleich in Schritt 1 zeigt immer alle fünf.")
+                        help="Wirkt auf Schritt 2 und 3 und die Kennzahlen des gewählten Laufs; der Regelvergleich in Schritt 1 und die Kurven in Schritt 4 zeigen immer alle fünf.")
     ratio = st.radio("Quotiententest bei Gleichstand", options=list(C.RATIO_LABELS), format_func=lambda v: C.RATIO_LABELS[v], key="ratio_select",
                      help="Wirkt bei Gleichständen im Quotiententest, also vor allem bei Beale und beim Transportproblem.")
 
@@ -338,6 +338,6 @@ Implementiert in `piv_algorithm.py` (Simplex mit fünf Regeln, zwei Quotienten-R
 st.markdown("---")
 st.caption(
     "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
-    "Operations Research und Machine Learning. Interesse an einer maßgeschneiderten Lösung für "
-    "Ihr Unternehmen? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html)"
+    "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
+    "Mehr zur Reihe: [Lineare Programmierung: vom Tableau zum Crossover](https://sebastianhanisch.net/konzepte-lineare-programmierung.html)."
 )

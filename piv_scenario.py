@@ -51,7 +51,7 @@ def degenerate_instance():
 
 def beale_instance():
     """Beales Beispiel (1955) für Zyklen, in Maximierungsform: max 3/4 x1 - 20 x2 + 1/2 x3 - 6 x4 unter 1/4 x1 - 8 x2 - x3 + 9 x4 <= 0, 1/2 x1 - 12 x2 - 1/2 x3 + 3 x4 <= 0, x3 <= 1.
-    Beide ersten Ressourcen haben Bestand 0 (voll entartet); Optimum 1/20 bei (1, 0, 1, 0)."""
+    Beide ersten Ressourcen haben Bestand 0 (voll entartet); Optimum 5/4 bei (1, 0, 1, 0)."""
     return _inst([[0.25, -8, -1, 9], [0.5, -12, -0.5, 3], [0, 0, 1, 0]], [0, 0, 1], [0.75, -20, 0.5, -6], [LE] * 3, ["Dienst 1", "Dienst 2", "Dienst 3", "Dienst 4"],
                  ["Ressource 1 (Bestand 0)", "Ressource 2 (Bestand 0)", "Ressource 3"], "beale")
 

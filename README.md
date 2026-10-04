@@ -8,11 +8,11 @@ Zweites Stück der **Lineare-Programmierung-Reihe** der "Konzepte"-Reihe für di
 
 ```
 Tableau-Simplex (Wurzel)                                                                  [gebaut: tableau-simplex-demo]
- ├─ Pivotregeln & Entartung  ─ Simplex im schlimmsten und im typischen Fall (Klee-Minty)  [DIESES STÜCK]  →  [nicht gebaut]
- ├─ Revised Simplex ─ Präsolve, Skalierung & Numerik                                     [nicht gebaut]
- ├─ Dualität & Sensitivität ─ Dualer Simplex & Neuoptimierung                            [nicht gebaut]
- ├─ Ellipsoid-Methode (Kontrast: polynomial in der Theorie)                              [nicht gebaut]
- └─ Innere Punkte ─ PDLP (Verfahren erster Ordnung) ─ Crossover & Simplex gegen Innere Punkte gegen PDLP  [nicht gebaut]
+ ├─ Pivotregeln & Entartung  ─ Simplex im schlimmsten und im typischen Fall (Klee-Minty)  [DIESES STÜCK]  →  [gebaut: klee-minty-demo]
+ ├─ Revised Simplex ─ Präsolve, Skalierung & Numerik                                     [gebaut: revised-simplex-demo, praesolve-demo]
+ ├─ Dualität & Sensitivität ─ Dualer Simplex & Neuoptimierung                            [gebaut: lp-dualitaet-demo, dualer-simplex-demo]
+ ├─ Ellipsoid-Methode (Kontrast: polynomial in der Theorie)                              [gebaut: ellipsoid-demo]
+ └─ Innere Punkte ─ PDLP (Verfahren erster Ordnung) ─ Crossover & Simplex gegen Innere Punkte gegen PDLP  [gebaut: innere-punkte-demo, pdlp-demo, crossover-demo]
 ```
 
 Ergebnis in Kürze: **Die klügere Regel spart Pivots und meist auch Rechnung – der Simplex kreist aber nur auf dem konstruierten Gegenbeispiel, und Stillstand gibt es nur bei struktureller Entartung.** Bei m = n = 40 braucht Steepest Edge im Median (30 Instanzen) 15.5 statt 21.5 Pivots auf Zufallsinstanzen, 51 statt 95.5 auf Mischinstanzen und 32 statt 53.5 im Transportproblem; mit Preisgebung kostet das auf Mischinstanzen 0.63 der Operationen von Dantzig, auf dem Lehrbuchbeispiel aber mehr (84 gegen 108). Bland braucht das 1.5- bis 3.7-fache der Pivots von Dantzig. **Beales Zyklus** kehrt mit Dantzig und Indexrest nach 6 Pivots zur Start-Basis zurück; in 2000 erzeugten Instanzen und 5000 zufälligen kleinen LPs im Stil von Beale trat **kein einziger Zyklus** auf. Nullschritte gibt es nur im Transportproblem (10.7 bis 19.6 % der Pivots je nach Regel), obwohl auch Zufalls-Instanzen mit Gleichständen im Quotiententest vorkommen.
@@ -91,4 +91,4 @@ Tests: `pip install -r requirements-dev.txt` und `python -m pytest tests/ -W err
 - Beale, E. M. L. (1955). *Cycling in the dual simplex algorithm.* Naval Research Logistics Quarterly 2(4), 269–275.
 - Dantzig, G. B., Orden, A., & Wolfe, P. (1955). *The generalized simplex method for minimizing a linear form under linear inequality restraints.* Pacific Journal of Mathematics 5, 183–195.
 
-Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning.
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Lineare Programmierung: vom Tableau zum Crossover](https://sebastianhanisch.net/konzepte-lineare-programmierung.html).
