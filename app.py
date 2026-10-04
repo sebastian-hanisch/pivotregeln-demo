@@ -81,7 +81,7 @@ st.markdown(
     """
 **Zweites Stück der Lineare-Programmierung-Reihe.** Im [Tableau-Simplex](https://github.com/sebastian-hanisch/tableau-simplex-demo) war die Wahl in jedem Pivot festgelegt: die Spalte mit den kleinsten reduzierten Kosten tritt ein (**Dantzig-Regel**).
 Andere Regeln wählen anders: die mit dem **größten Zuwachs** des Zielwerts, die mit dem besten Verhältnis von Verbesserung zu **Kantenlänge** (**Steepest Edge**), die mit dem **kleinsten Index** (**Bland**) oder eine **zufällige**.
-Dazu kommt die Zeilenwahl bei einem Gleichstand im Quotiententest: nach **kleinstem Index** oder **lexikographisch**. Bei einem Gleichstand steht der Simplex an einer entarteten Ecke, und dort kann er stillstehen (Nullschritte) oder sogar
+Dazu kommt die Zeilenwahl bei einem Gleichstand im Quotiententest: nach **kleinstem Index** oder **lexikographisch**. Ein Gleichstand führt zu einer entarteten Ecke, und dort kann der Simplex stillstehen (Nullschritte) oder sogar
 **kreisen**. Vier Fragen, alle gemessen: **(1) Regelvergleich** - wie viele Pivots und wie viel Rechnung braucht jede Regel? **(2) Beales Zyklus** - kreist der Simplex wirklich, und was verhindert es? **(3) Stillstand** - wie oft steht er still?
 **(4) Aufwand** - wie wachsen die Unterschiede mit der Größe?
 """

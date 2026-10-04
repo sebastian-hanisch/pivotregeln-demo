@@ -47,7 +47,7 @@ Presets (10): Standardfall (Lehrbuchbeispiel), Beales Zyklus, Bland rettet Beale
 | **Lexikographisch rettet Beale** | Beale, Dantzig, lexikographisch | 2 Pivots, Optimum 1.25 |
 | **Steepest Edge spart Pivots** | Mischung 40 x 40, Seed 35 | Dantzig 102 Pivots / 743 580 Operationen, Steepest Edge 52 / 454 028 (0.51 der Pivots, 0.61 der Operationen); Median über 5 feste Instanzen 112 gegen 61 Pivots |
 | **Bland ist langsam** | Zufall 40 x 40, Seed 35 | Bland 95 Pivots, Dantzig 41 (2.3-fach); Median 61 gegen 17 (3.6-fach) |
-| **Transport: Stillstand** | 4 Lager, 8 Kunden, Seed 35 | Dantzig 33 Pivots, 3 Nullschritte (9 %); über 30 Instanzen im Mittel 12.7 % |
+| **Transport: Stillstand** | 4 Lager, 8 Kunden, Seed 35 | Dantzig 33 Pivots, 3 Nullschritte (9 %); über 30 Instanzen zusammen 12.7 % der Pivots (Summe der Nullschritte durch Summe der Pivots) |
 | **Große Transportinstanz** | 8 Lager, 12 Kunden | Dantzig 85 Pivots, 15 Nullschritte (17.6 %); Steepest Edge 35 Pivots mit 3 Nullschritten |
 | **Kein Stillstand im Zufall** | Zufall 20 x 20 | Dantzig 7 Pivots ohne Gleichstand, keine Regel hat einen Nullschritt |
 | **Aufwand über die Größe** | Mischung 20 x 20, Steepest Edge | 24 Pivots gegen 37 bei Dantzig (Median über 30 Instanzen 22.5 gegen 34) |
